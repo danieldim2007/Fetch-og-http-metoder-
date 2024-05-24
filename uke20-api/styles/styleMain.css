@@ -1,0 +1,199 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    padding: .5rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FBA919;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header"
+    "sidebar main main"
+    "footer footer footer";
+
+}
+.header_main{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: black;
+    align-items: center;
+}
+.header_main #menu_header{
+    grid-column: 1;
+}
+.header_main #menu_header ul{
+    display: flex;
+    list-style: none;
+    padding: 2rem;
+}
+.header_main #menu_header ul li{
+    padding: 1rem;
+    font-size: 1.9rem ;
+}
+.header_main #menu_bar{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    
+    display: flex;
+    justify-content:center;
+
+}
+.header_main #menu_bar input{
+
+    width:20rem;
+    padding-left: 1em;
+    height: auto;    
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.header_main #menu_bar p{
+
+    font-size: 1.5rem;
+}
+.header_main #logo_main{
+    grid-column: 3;
+    padding: 2rem;
+    text-align: center;
+
+}
+.header_main #logo_main p{
+    font-size: 5rem;
+    
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color:black;
+    padding: 5rem 7rem;
+    align-items: center;
+}
+
+.sidebar #sidebar_options ul{
+    list-style: none;
+    padding: 1rem 0 1rem 0;
+}
+.sidebar #sidebar_options ul li{
+    padding: 0 0 1rem 0;
+    font-size: 25px;
+}
+.main_main{
+    grid-column-start:2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+
+}
+.main_main #info{
+    padding: 10%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+
+}
+.main_main #map1{
+    height: 100%;
+    width: 500px;
+    margin-left: 10%;
+    aspect-ratio: 1/1;
+}
+.main_main #map iframe{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+
+}
+
+#btn{
+   display: none;
+}
+
+#sidebar_options #myList{
+    display: none;
+    padding: 1rem;
+    background-color: #99c9e9;
+    
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+}
+#sidebar_options #myList li{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+}
+.images_main{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem;
+
+}
+.images_main p{
+    font-size: 10rem;
+    padding: 1rem;
+}
+.images_main #card{
+    
+    width:30rem;
+    height:auto;
+    max-width: 250px;
+    padding:2rem 0 2rem 0;
+
+}
+
+
+
+/*mitt implementasjon*/
+.info-tekst h1{
+  font-size: 15px;
+  color: white;
+}
+
+#searchbar-andre{
+  margin-top: 1em;
+  font-size: 15px;
+  padding-left: 1em;
+  height: auto;    
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.city{
+    display: flex;
+}
+
+.city-tekst{
+    font-size: 20px;
+}
+
+.city-tekst p{
+   line-height: 50px;
+   color: white;
+   
+}
+
+.text-første {
+    position: relative;
+    margin-left: 4rem;
+    font-size: 25px;
+    color: white;
+}
+
+.images_main img{
+    width: 40%;
+}
+
+.fa-solid{
+    color: white;
+}
+
+#card img{
+    width: 200px
+}
